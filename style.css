@@ -288,15 +288,38 @@
     border-radius: 50%;
     z-index : -2;
   }
+
+ 
   
   #left-hand{
    left : -110%;
    }
-  
+
   #right-hand{
      left :160%;
    }
 
+
+   .palms{
+    background : #FFD05B;
+    position: absolute;
+    width : 60px;
+    height: 30px;
+    top: 7%;
+    display : inline-block;
+    border-radius: 50%;
+    z-index : -2;
+  }
+
+ 
+  
+  #left-palm{
+   left : -150%;
+   }
+
+  #right-palm{
+     left :180%;
+   }
 
    /* Animation For Bot's Head */
    @keyframes blink{
