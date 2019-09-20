@@ -1,0 +1,312 @@
+#bot{
+    background: #FFD05B;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position : absolute;
+    top : 50%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+    overflow:hidden;
+  }
+
+ #base{
+    position : absolute;
+     background: orange;
+     width: 400px;
+     height: 50px;
+     border-radius: 0 0 50% 50%;
+     top : 98%;
+     left: 50%;
+     transform : translate(-50%, -50%);
+   
+ }
+ #head{
+   position : absolute;
+   background : transparent;
+   width : 150px;
+   height: 50px;
+   top: 25%;
+   left : 50%;
+   transform: translate(-50%, -50%);
+   display: block;
+   
+ }
+ 
+ #forehead{
+   background : white;
+   position: absolute;
+   width : 100px;
+   height: 50px;
+   display : inline-block;
+   z-index: -1;
+   top: 50%;
+     left: 50%;
+   transform : translate(-50%, -50%);
+  
+ }
+ 
+ #forehead::before{
+   content : "";
+   background : #FFD05B;
+   position: absolute;
+   width : 100px;
+   height: 50px;
+   top: -35%;
+   left : 50%;
+   transform : translate(-50%, -50%);
+   display : inline-block;
+   z-index :-1;
+   border-radius: 50%;
+
+ }
+ 
+ #forehead::after{
+    content : "";
+   background : #FFD05B;
+   position: absolute;
+   width : 100px;
+   height: 50px;
+   top: 135%;
+   left : 50%;
+   transform : translate(-50%, -50%);
+   display : inline-block;
+   z-index : -1;
+   border-radius: 50%;
+ }
+ 
+ 
+ 
+ .eyes{
+   background : skyblue;
+   position: absolute;
+   width : 50px;
+   height: 50px;
+   border-radius: 50%; 
+   display : inline-block;
+   box-shadow : 0 0 1px 5px white;
+   z-index : 2;
+   animation-name: blink;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+ }
+ 
+ #left-eye{
+  left : 0%;
+ }
+ 
+ #right-eye{
+    right :0%;
+ }
+ 
+ .inner-eye{
+   background : #4AAAE7;
+   position: absolute;
+   width : 30px;
+   height: 30px;
+   border-radius: 50%; 
+   display : inline-block;
+   top: 50%;
+   left: 50%;
+   transform : translate(-50%, -50%);
+ }
+ 
+ .pupil-one{
+    background : #fff;
+   position: absolute;
+   width : 15px;
+   height: 15px;
+   border-radius: 50%; 
+   display : inline-block;
+   top: -5%;
+   left: 10%;
+ }
+ .pupil-two{
+    background : #fff;
+   position: absolute;
+   width : 10px;
+   height: 10px;
+   border-radius: 50%; 
+   display : inline-block;
+   top: 70%;
+   left: 60%;
+ }
+ 
+ #neck{
+   position : absolute;
+   background : #555;
+   width : 20px;
+   height: 30px;
+   top: -12%;
+   left : 50%;
+   transform: translate(-50%, -50%);
+   border-radius : 25px 25px 40px 40px;
+   display: block;
+ }
+ 
+ #body{
+   position : absolute;
+   background : white;
+   width : 80px;
+   height: 90px;
+   top: 47%;
+   left : 50%;
+   transform: translate(-50%, -50%);
+   border-radius : 25px 25px 40px 40px;
+   display: block;
+   z-index: 0;
+ }
+
+ .shoulders{
+    background : white;
+    position: absolute;
+    width : 40px;
+    height: 40px;
+    top: 15%;
+    border-radius: 50%; 
+    display : inline-block;
+   }
+  
+  #left-shoulder{
+   left : -35%;
+  }
+  
+  #right-shoulder{
+     right :-35%;
+  }
+
+
+  .leg-joints{
+    background : #555;
+    position: absolute;
+    width : 10px;
+    height: 30px;
+    top: 95%;
+    display : inline-block;
+    border-radius: 30%;
+    z-index : -2;
+  }
+  
+  #left-leg-joint{
+   left : 20%;
+   transform: rotate(10deg);
+  }
+  
+  #right-leg-joint{
+     left :70%;
+     transform: rotate(-10deg);
+  }
+
+  
+ .legs{
+    background : white;
+    position: absolute;
+    width : 25px;
+    height: 110px;
+    top: 110%;
+    display : inline-block;
+  }
+  
+  #left-leg{
+   left : 5%;
+   border-radius:  350% 300% 150% 250%; 
+  }
+  
+  #right-leg{
+    left : 65%;
+    border-radius:  300% 350% 250% 150% ; 
+  }
+    
+ .ankles{
+    background : #555;
+    position: absolute;
+    width : 20px;
+    height: 20px;
+    top: 220%;
+    display : inline-block;
+  }
+  
+  #left-ankle{
+   left : 10%;
+   
+  }
+  
+  #right-ankle{
+    left : 65%;
+    
+  }
+
+  .toes{
+    background : white;
+    position: absolute;
+    width : 30px;
+    height: 10px;
+    top: 240%;
+    display : inline-block;
+    border-radius: 5px;
+  }
+  
+  #left-toe{
+   left : 5%;
+   
+  }
+  
+  #right-toe{
+    left : 60%;
+    
+  }
+
+  .hand-joints{
+    background : #555;
+    position: absolute;
+    width : 50px;
+    height: 20px;
+    top: 25%;
+    display : inline-block;
+    border-radius: 30%;
+    z-index : -2;
+  }
+  
+  #left-hand-joint{
+   left : -85%;
+   transform: rotate(20deg);
+  }
+  
+  #right-hand-joint{
+     left :125%;
+     transform: rotate(-20deg);
+
+  }
+
+  .hands{
+    background : white;
+    position: absolute;
+    width : 40px;
+    height: 40px;
+    top: 5%;
+    display : inline-block;
+    border-radius: 50%;
+    z-index : -2;
+  }
+  
+  #left-hand{
+   left : -110%;
+   }
+  
+  #right-hand{
+     left :160%;
+   }
+
+
+   /* Animation For Bot's Head */
+   @keyframes blink{
+    25%{
+        transform: scale(0.9) rotate(30deg);
+        border-radius: 40%;
+
+       }
+       75%{
+        transform: scale(1.1);
+        border-radius: 40%;
+       }
+   }
